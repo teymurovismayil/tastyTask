@@ -1,0 +1,128 @@
+#slogan {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://wallpapers.com/images/featured/restaurant-background-2ez77umko2vj5w02.jpg);
+    background-size: cover;
+
+    .navbarMenu {
+        background: transparent;
+        color: rgb(255, 255, 255);
+        padding: 3rem;
+    }
+
+    .logo {
+        border: 2px solid white;
+        width: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: x-large;
+    }
+
+    .lists {
+        font-size: 16px;
+
+        ul {
+            display: flex;
+            justify-content: end;
+            gap: 40px;
+            list-style-type: none;
+
+            li:hover {
+                cursor: pointer;
+            }
+        }
+
+
+    }
+}
+
+
+
+
+.menuIcon {
+    display: none;
+}
+
+@media only screen and (max-width: 1006px) {
+    .menuIcon {
+        display: inline-block;
+        color: 20px;
+        font-size: large;
+    }
+
+    .lists {
+
+        ul {
+            li {
+                display: none;
+            }
+        }
+    }
+
+}
+#chefSlogan {
+    width: 100%;
+    height: auto;
+    border: 1px solid rgb(150, 8, 79);
+}
+
+.chefImage {
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.chefAbout {
+    display: flex;
+    align-items: center;
+
+    .chefAbout-box {
+        width: 60%;
+        margin-left: 70px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        
+    }
+}
+#menu {
+    height: 100vh;
+    background-color: aqua;
+    .image {
+        width: 70px;
+        height: 70px;
+        background-color: rgb(48, 177, 9);
+        border-radius: 9999px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 9999px;
+        }
+    }
+    .menu-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        background-color: red;
+    }
+}
+.menu__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.test {
+    display: flex;
+    flex-direction: column;
+    align-items: s;
+}
+
+.card-container{
+    display: flex;
+    gap: 20px;
+}
