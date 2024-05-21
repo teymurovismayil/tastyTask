@@ -4,7 +4,9 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { TiThMenu } from "react-icons/ti";
 import axios from 'axios';
-
+import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
+import { Add } from './pages/Add';
+import { Menu } from './components/Menu';
 
 
 function App() {
@@ -65,41 +67,21 @@ function App() {
           </div>
         </div>
       </section>
+      <BrowserRouter>
+            <Routes> 
+                <Route element={<Add/>} path='/add' />
+                <Route element={<Menu/>} path='/' />
+            </Routes>
+      </BrowserRouter>
+      
 
-      <section id='menu'>
-        <div className='menu__header'>
-          <span>OUR MENU</span>
-          <h2>Discover Our Exclusive Menu</h2>
-        </div>
+          
 
-        <div className="container">
-          <div className="row">
-           {
-              data.map((element, i) => {
-                return (
-                  <div className="col-6 mb-2">
-                    <div className='menu-item'>
-                      <div className='card-container'>
-                      <div className="image">
-                        <img src={element.image} alt="" />
-                      </div>
-                      <div className='test'>
-                        <h3>{element.meal}</h3>
-                        <p>{element.receipt}</p>
-                      </div>
-                      </div>
-                      <h1>{element.price}</h1>
-                    </div>
-                  </div>
-                )
-              })
-            }
-          </div>
-        </div>
-        
-        <div className='d-flex justify-content-center'><button  className='btn btn-primary'><a href="./pages/Add.jsx">Elave Et</a></button></div>
+     
+         
 
-      </section>
+     
+      {/* <Link to="/add"><button>Add</button></Link> */}
     </>
   )
 }

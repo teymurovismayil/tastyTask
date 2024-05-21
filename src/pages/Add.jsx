@@ -1,20 +1,31 @@
 import React from 'react'
-import { useForm, SubmitHandler } from "react-hook-form"
+import { useForm } from "react-hook-form"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const Add = () => {
+
     const { register, handleSubmit } = useForm()
     const onSubmit = (data) => console.log(data)
+
     return (
-        <div>
-            <form onSubmit={handleSubmit(onSubmit)}>
-                <input {...register("firstName")} />
-                <select {...register("gender")}>
-                    <option value="female">female</option>
-                    <option value="male">male</option>
-                    <option value="other">other</option>
-                </select>
+        <div className='addPage'>
+            <form className='d-flex flex-column w-50 align-items-center' onSubmit={handleSubmit(onSubmit)}>
+                <label>Meal
+                    <input {...register("meal")} />
+                </label>
+
+
+                <label>Receipt
+                    <input {...register("receipt")} />
+                </label>
+
+                <label>Price
+                    <input {...register("price")} />
+                </label>
+
                 <input type="submit" />
             </form>
         </div>
+
     )
 }
