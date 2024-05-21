@@ -33,12 +33,15 @@
             }
         }
 
+      
+
 
     }
 }
 
-
-
+.adminlist {
+    list-style-type: none;
+}
 
 .menuIcon {
     display: none;
@@ -130,4 +133,11 @@
 .addPage {
     height: 100vh;
     border: 1px solid red;
+}
+
+table, th, td {
+    border:1px solid black;
+}
+table {
+    width: 100%;
 }
