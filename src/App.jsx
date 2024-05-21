@@ -3,12 +3,14 @@ import './App.scss'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Add } from './pages/Add';
 import { Navbar } from './components/Navbar';
 import { Homepage } from './pages/Homepage';
 import { Admin } from './pages/Admin';
 import { ChefAbout } from './components/ChefAbout';
 import { Edit } from './pages/Edit';
+
+
+
 
 
 
@@ -32,9 +34,9 @@ function App() {
           <Route element={<Navbar />}></Route>
           {/* <Route element={<Navbar/>} path='/'></Route> */}
           <Route element={<ChefAbout />}></Route>
-          <Route element={<Add />} path='/add' />
           <Route element={<Admin />} path='/admin'></Route>
-          <Route element={<Edit/>} path='/edit'></Route>
+          <Route element={<Edit/>} path='/edit/:id'></Route>
+       
         </Routes>
       </BrowserRouter>
 

@@ -23,7 +23,7 @@ export const Menu = () => {
                         {
                             data.map((element, i) => {
                                 return (
-                                    <div className="col-6 mb-2">
+                                    <div className="col-12 col-lg-6 mb-2">
                                         <div className='menu-item'>
                                             <div className='card-container'>
                                                 <div className="image">
@@ -43,7 +43,7 @@ export const Menu = () => {
                     </div>
                 </div>
 
-                <Link to="/add"><div className='d-flex justify-content-center'><button className='btn btn-primary'>Add</button></div></Link>
+              
             
             </section>
         </>

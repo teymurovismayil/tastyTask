@@ -1,7 +1,7 @@
 import axios, { Axios } from 'axios'
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
-
+import { Link, useParams } from 'react-router-dom'
+    
 
 
 export const Admin = () => {
@@ -11,17 +11,21 @@ export const Admin = () => {
             .then(res => setinfo(res.data))
     }, [])
 
-
-
+    const deleteElement = (id) =>{
+        axios.delete('http://localhost:8000/products/'+id)
+    }
+    
     return (
-        <div>
-            <table>
+        <div className='container d-flex align-items-center tablebox'>
+            <table className='mb-5'>
                 <thead>
                     <tr>
+                        <th>id</th>
                         <th>Meal</th>
                         <th>Receipt</th>
                         <th>Price</th>
-                        <th colSpan={2}>Edit/Delete</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -30,11 +34,12 @@ export const Admin = () => {
                         info.map((el,i) => {
                             return (
                                 <tr key={i}>
+                                    <td>{el.id}</td>
                                     <td>{el.meal}</td>
                                     <td>{el.receipt}</td>
                                     <td>{el.price}</td>
-                                    <td><Link to='/edit'><button>Edit</button></Link></td>
-                                    <td><button>Delete</button></td>
+                                    <td><Link to='/edit/+id'><button className='btn btn-outline-secondary'>Edit</button></Link></td>
+                                    <td><button className='btn btn-outline-secondary' onClick={()=>deleteElement(id)}>Delete</button></td>
                                 </tr>
                             )
                         })
@@ -43,6 +48,7 @@ export const Admin = () => {
 
                 </tbody>
             </table>
+          
         </div>
     )
 }

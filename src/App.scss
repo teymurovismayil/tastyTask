@@ -49,9 +49,13 @@
 
 @media only screen and (max-width: 1006px) {
     .menuIcon {
-        display: inline-block;
-        color: 20px;
-        font-size: large;
+        display: flex;
+        align-items: center;
+        font-size: x-large;
+        width: 6rem;
+        background-color: transparent;
+        color: white;
+        border: none;
     }
 
     .lists {
@@ -91,7 +95,7 @@
     }
 }
 #menu {
-    height: 100vh;
+    height: auto;
     background-color: aqua;
     .image {
         width: 70px;
@@ -129,15 +133,25 @@
     display: flex;
     gap: 20px;
 }
-
+.tablebox{
+    height: 100vh;
+}
 .addPage {
     height: 100vh;
     border: 1px solid red;
 }
 
-table, th, td {
+table, th, td, tr {
     border:1px solid black;
+    border-collapse: collapse;
 }
 table {
     width: 100%;
+}
+
+.editPageBg {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

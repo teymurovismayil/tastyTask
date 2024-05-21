@@ -2,9 +2,18 @@ import React from 'react'
 import { TiThMenu } from "react-icons/ti";
 import { Link } from 'react-router-dom';
 
+
 export const Navbar = () => {
+
+  const dropMenu = () => {
+    return (
+      <div className='lists' style={{display:block}}></div>
+    )
+    
+  }
+
   return (
-    <section id='slogan'>
+    <section id='slogan' className='mb-5'>
         <div className="container navbarMenu">
           <div className="row">
             <div className="col-3">
@@ -21,7 +30,8 @@ export const Navbar = () => {
                 <li>About</li>
                 <li>Contact</li>
                 <Link to='/admin'><li className='adminlist'>Admin</li></Link>
-                <div className='menuIcon'><TiThMenu /> Menu</div>
+         
+                <button onClick={dropMenu} className='menuIcon'><TiThMenu /> Menu</button>
 
               </ul>
 
