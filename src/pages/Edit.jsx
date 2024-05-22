@@ -30,13 +30,13 @@ export const Edit = () => {
       <form onSubmit={handleSubmit(onSubmit)} className='w-50 mb-5'>
 
         <div className='d-flex flex-column align-items-center gap-3 border border-danger'>
-          <div className='d-flex gap-1 mt-5'>
+          <div className='row w-100 gap-1 mt-5'>
             <label className='text-white'>Yemeyin Adini qeyd edin</label><input defaultValue={info.meal} {...register("meal")} />
           </div>
-          <div className='d-flex gap-5'>
-            <label className='text-white'>Resepti Qeyd Edin</label><input defaultValue={info.receipt} {...register("receipts")} />
+          <div className='row w-100'>
+            <label className='text-white'>Resepti Qeyd Edin</label><input defaultValue={info.receipt} {...register("receipt")} />
           </div>
-          <div className='d-flex gap-4'>
+          <div className='row w-100'>
             <label className='text-white'>Qiymetini Qeyd Edin</label><input defaultValue={info.price} {...register("price")} />
           </div>
           <input className='btn btn-outline-danger' type="submit" />

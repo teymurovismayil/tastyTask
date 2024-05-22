@@ -8,8 +8,8 @@ export const Homepage = () => {
   return (
     <>
         <Navbar/>
-        <Menu/>
         <ChefAbout/>
+        <Menu/>
     </>
   )
 }

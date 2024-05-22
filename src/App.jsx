@@ -8,8 +8,8 @@ import { Homepage } from './pages/Homepage';
 import { Admin } from './pages/Admin';
 import { ChefAbout } from './components/ChefAbout';
 import { Edit } from './pages/Edit';
-
-
+import { AddPage } from './pages/AddPage';
+ 
 
 
 
@@ -35,7 +35,8 @@ function App() {
           {/* <Route element={<Navbar/>} path='/'></Route> */}
           <Route element={<ChefAbout />}></Route>
           <Route element={<Admin />} path='/admin'></Route>
-          <Route element={<Edit/>} path='/edit/:id'></Route>
+          <Route element={<Edit/>} path='edit/:id'></Route>
+          <Route element={<AddPage/>} path='AddPage' ></Route>
        
         </Routes>
       </BrowserRouter>
