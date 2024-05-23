@@ -71,7 +71,6 @@
 #chefSlogan {
     width: 100%;
     height: auto;
-    border: 1px solid rgb(150, 8, 79);
 }
 
 .chefImage {
@@ -96,11 +95,9 @@
 }
 #menu {
     height: auto;
-    background-color: aqua;
     .image {
         width: 70px;
         height: 70px;
-        background-color: rgb(48, 177, 9);
         border-radius: 9999px;
 
         img {
@@ -114,7 +111,7 @@
         align-items: center;
         justify-content: space-between;
         gap: 20px;
-        background-color: red;
+        border: 1px solid black;
     }
 }
 .menu__header {
@@ -134,11 +131,14 @@
     gap: 20px;
 }
 .tablebox{
-    height: 100vh;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 .addPage {
     height: 100vh;
-    border: 1px solid red;
 }
 
 table, th, td, tr {

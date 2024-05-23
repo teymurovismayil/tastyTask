@@ -7,9 +7,10 @@ import { ChefAbout } from '../components/ChefAbout'
 export const Homepage = () => {
   return (
     <>
-        <Navbar />
+        <Navbar/>
         <Menu/>
         <ChefAbout/>
+        <Menu/>
     </>
   )
 }
