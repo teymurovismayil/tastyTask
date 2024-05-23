@@ -2,10 +2,53 @@
   "products": [
     {
       "id": "6",
-      "meal": "Project Manager rftdrdrdrtdddddddddddddddddr",
+      "meal": "Project Manager ",
       "receipt": "Alpine",
-      "price": 10,
-      "image": "https://preview.colorlib.com/theme/tasty/images/dish-8.jpg.webp"
+      "price": "10",
+      "image": "https://preview.colorlib.com/theme/tasty/images/dish-8.jpg.webp",
+      "data": {
+        "id": "6",
+        "meal": "Project Manager rftdrdrdrtdddddddddddddddddr",
+        "receipt": "Alpine",
+        "price": 10,
+        "image": "https://preview.colorlib.com/theme/tasty/images/dish-8.jpg.webp"
+      },
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-length": "189",
+        "content-type": "application/json"
+      },
+      "config": {
+        "transitional": {
+          "silentJSONParsing": true,
+          "forcedJSONParsing": true,
+          "clarifyTimeoutError": false
+        },
+        "adapter": [
+          "xhr",
+          "http",
+          "fetch"
+        ],
+        "transformRequest": [
+          null
+        ],
+        "transformResponse": [
+          null
+        ],
+        "timeout": 0,
+        "xsrfCookieName": "XSRF-TOKEN",
+        "xsrfHeaderName": "X-XSRF-TOKEN",
+        "maxContentLength": -1,
+        "maxBodyLength": -1,
+        "env": {},
+        "headers": {
+          "Accept": "application/json, text/plain, */*"
+        },
+        "method": "get",
+        "url": "http://localhost:8000/products/6"
+      },
+      "request": {}
     },
     {
       "id": "7",
@@ -28,6 +71,357 @@
       "receipt": "AMAG Pharmaceuticals, Inc.",
       "price": 30,
       "image": "https://preview.colorlib.com/theme/tasty/images/dish-8.jpg.webp"
+    },
+    {
+      "id": "cbc5",
+      "data": [
+        {
+          "id": "6",
+          "meal": "Project Manager ",
+          "receipt": "Alpine",
+          "price": "10",
+          "image": "https://preview.colorlib.com/theme/tasty/images/dish-8.jpg.webp",
+          "data": {
+            "id": "6",
+            "meal": "Project Manager rftdrdrdrtdddddddddddddddddr",
+            "receipt": "Alpine",
+            "price": 10,
+            "image": "https://preview.colorlib.com/theme/tasty/images/dish-8.jpg.webp"
+          },
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "content-length": "189",
+            "content-type": "application/json"
+          },
+          "config": {
+            "transitional": {
+              "silentJSONParsing": true,
+              "forcedJSONParsing": true,
+              "clarifyTimeoutError": false
+            },
+            "adapter": [
+              "xhr",
+              "http",
+              "fetch"
+            ],
+            "transformRequest": [
+              null
+            ],
+            "transformResponse": [
+              null
+            ],
+            "timeout": 0,
+            "xsrfCookieName": "XSRF-TOKEN",
+            "xsrfHeaderName": "X-XSRF-TOKEN",
+            "maxContentLength": -1,
+            "maxBodyLength": -1,
+            "env": {},
+            "headers": {
+              "Accept": "application/json, text/plain, */*"
+            },
+            "method": "get",
+            "url": "http://localhost:8000/products/6"
+          },
+          "request": {}
+        },
+        {
+          "id": "7",
+          "meal": "necesen",
+          "receipt": "American Eagle Outfitters, Inc.",
+          "price": 7,
+          "image": "https://preview.colorlib.com/theme/tasty/images/dish-9.jpg.webp",
+          "receipts": ""
+        },
+        {
+          "id": "8",
+          "meal": "Electrician",
+          "receipt": "Nuveen Municipal Income Fund, Inc.",
+          "price": 20,
+          "image": "https://preview.colorlib.com/theme/tasty/images/dish-10.jpg.webp"
+        },
+        {
+          "id": "10",
+          "meal": "Construction Worker",
+          "receipt": "AMAG Pharmaceuticals, Inc.",
+          "price": 30,
+          "image": "https://preview.colorlib.com/theme/tasty/images/dish-8.jpg.webp"
+        }
+      ],
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-length": "1844",
+        "content-type": "application/json"
+      },
+      "config": {
+        "transitional": {
+          "silentJSONParsing": true,
+          "forcedJSONParsing": true,
+          "clarifyTimeoutError": false
+        },
+        "adapter": [
+          "xhr",
+          "http",
+          "fetch"
+        ],
+        "transformRequest": [
+          null
+        ],
+        "transformResponse": [
+          null
+        ],
+        "timeout": 0,
+        "xsrfCookieName": "XSRF-TOKEN",
+        "xsrfHeaderName": "X-XSRF-TOKEN",
+        "maxContentLength": -1,
+        "maxBodyLength": -1,
+        "env": {},
+        "headers": {
+          "Accept": "application/json, text/plain, */*"
+        },
+        "method": "get",
+        "url": "http://localhost:8000/products/"
+      },
+      "request": {},
+      "meal": "akula",
+      "receipt": "necesen",
+      "price": "444",
+      "image": null
+    },
+    {
+      "id": "44ca",
+      "data": [
+        {
+          "id": "6",
+          "meal": "Project Manager ",
+          "receipt": "Alpine",
+          "price": "10",
+          "image": "https://preview.colorlib.com/theme/tasty/images/dish-8.jpg.webp",
+          "data": {
+            "id": "6",
+            "meal": "Project Manager rftdrdrdrtdddddddddddddddddr",
+            "receipt": "Alpine",
+            "price": 10,
+            "image": "https://preview.colorlib.com/theme/tasty/images/dish-8.jpg.webp"
+          },
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "content-length": "189",
+            "content-type": "application/json"
+          },
+          "config": {
+            "transitional": {
+              "silentJSONParsing": true,
+              "forcedJSONParsing": true,
+              "clarifyTimeoutError": false
+            },
+            "adapter": [
+              "xhr",
+              "http",
+              "fetch"
+            ],
+            "transformRequest": [
+              null
+            ],
+            "transformResponse": [
+              null
+            ],
+            "timeout": 0,
+            "xsrfCookieName": "XSRF-TOKEN",
+            "xsrfHeaderName": "X-XSRF-TOKEN",
+            "maxContentLength": -1,
+            "maxBodyLength": -1,
+            "env": {},
+            "headers": {
+              "Accept": "application/json, text/plain, */*"
+            },
+            "method": "get",
+            "url": "http://localhost:8000/products/6"
+          },
+          "request": {}
+        },
+        {
+          "id": "7",
+          "meal": "necesen",
+          "receipt": "American Eagle Outfitters, Inc.",
+          "price": 7,
+          "image": "https://preview.colorlib.com/theme/tasty/images/dish-9.jpg.webp",
+          "receipts": ""
+        },
+        {
+          "id": "8",
+          "meal": "Electrician",
+          "receipt": "Nuveen Municipal Income Fund, Inc.",
+          "price": 20,
+          "image": "https://preview.colorlib.com/theme/tasty/images/dish-10.jpg.webp"
+        },
+        {
+          "id": "10",
+          "meal": "Construction Worker",
+          "receipt": "AMAG Pharmaceuticals, Inc.",
+          "price": 30,
+          "image": "https://preview.colorlib.com/theme/tasty/images/dish-8.jpg.webp"
+        },
+        {
+          "id": "cbc5",
+          "data": [
+            {
+              "id": "6",
+              "meal": "Project Manager ",
+              "receipt": "Alpine",
+              "price": "10",
+              "image": "https://preview.colorlib.com/theme/tasty/images/dish-8.jpg.webp",
+              "data": {
+                "id": "6",
+                "meal": "Project Manager rftdrdrdrtdddddddddddddddddr",
+                "receipt": "Alpine",
+                "price": 10,
+                "image": "https://preview.colorlib.com/theme/tasty/images/dish-8.jpg.webp"
+              },
+              "status": 200,
+              "statusText": "OK",
+              "headers": {
+                "content-length": "189",
+                "content-type": "application/json"
+              },
+              "config": {
+                "transitional": {
+                  "silentJSONParsing": true,
+                  "forcedJSONParsing": true,
+                  "clarifyTimeoutError": false
+                },
+                "adapter": [
+                  "xhr",
+                  "http",
+                  "fetch"
+                ],
+                "transformRequest": [
+                  null
+                ],
+                "transformResponse": [
+                  null
+                ],
+                "timeout": 0,
+                "xsrfCookieName": "XSRF-TOKEN",
+                "xsrfHeaderName": "X-XSRF-TOKEN",
+                "maxContentLength": -1,
+                "maxBodyLength": -1,
+                "env": {},
+                "headers": {
+                  "Accept": "application/json, text/plain, */*"
+                },
+                "method": "get",
+                "url": "http://localhost:8000/products/6"
+              },
+              "request": {}
+            },
+            {
+              "id": "7",
+              "meal": "necesen",
+              "receipt": "American Eagle Outfitters, Inc.",
+              "price": 7,
+              "image": "https://preview.colorlib.com/theme/tasty/images/dish-9.jpg.webp",
+              "receipts": ""
+            },
+            {
+              "id": "8",
+              "meal": "Electrician",
+              "receipt": "Nuveen Municipal Income Fund, Inc.",
+              "price": 20,
+              "image": "https://preview.colorlib.com/theme/tasty/images/dish-10.jpg.webp"
+            },
+            {
+              "id": "10",
+              "meal": "Construction Worker",
+              "receipt": "AMAG Pharmaceuticals, Inc.",
+              "price": 30,
+              "image": "https://preview.colorlib.com/theme/tasty/images/dish-8.jpg.webp"
+            }
+          ],
+          "status": 200,
+          "statusText": "OK",
+          "headers": {
+            "content-length": "1844",
+            "content-type": "application/json"
+          },
+          "config": {
+            "transitional": {
+              "silentJSONParsing": true,
+              "forcedJSONParsing": true,
+              "clarifyTimeoutError": false
+            },
+            "adapter": [
+              "xhr",
+              "http",
+              "fetch"
+            ],
+            "transformRequest": [
+              null
+            ],
+            "transformResponse": [
+              null
+            ],
+            "timeout": 0,
+            "xsrfCookieName": "XSRF-TOKEN",
+            "xsrfHeaderName": "X-XSRF-TOKEN",
+            "maxContentLength": -1,
+            "maxBodyLength": -1,
+            "env": {},
+            "headers": {
+              "Accept": "application/json, text/plain, */*"
+            },
+            "method": "get",
+            "url": "http://localhost:8000/products/"
+          },
+          "request": {},
+          "meal": "akula",
+          "receipt": "necesen",
+          "price": "444",
+          "image": null
+        }
+      ],
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-length": "4928",
+        "content-type": "application/json"
+      },
+      "config": {
+        "transitional": {
+          "silentJSONParsing": true,
+          "forcedJSONParsing": true,
+          "clarifyTimeoutError": false
+        },
+        "adapter": [
+          "xhr",
+          "http",
+          "fetch"
+        ],
+        "transformRequest": [
+          null
+        ],
+        "transformResponse": [
+          null
+        ],
+        "timeout": 0,
+        "xsrfCookieName": "XSRF-TOKEN",
+        "xsrfHeaderName": "X-XSRF-TOKEN",
+        "maxContentLength": -1,
+        "maxBodyLength": -1,
+        "env": {},
+        "headers": {
+          "Accept": "application/json, text/plain, */*"
+        },
+        "method": "get",
+        "url": "http://localhost:8000/products/"
+      },
+      "request": {},
+      "meal": "heyy",
+      "receipt": "ooooo",
+      "price": "333",
+      "image": null
     }
   ]
 }

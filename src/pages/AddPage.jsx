@@ -6,9 +6,19 @@ import axios from 'axios';
 
 export const AddPage = () => {
 
+    const [image, setimage] = useState(null)
+
+    const convertoBase64 = () => {
+      let reader = new FileReader();
+      reader.readAsDataURL(file);
+      reader.onload = () => {
+        setimage(reader.result)
+      }
+    }
+
     const { register, handleSubmit } = useForm({defaultValues : async ()=> axios.get('http://localhost:8000/products/')})
     const onSubmit = (data) => {
-      axios.post('http://localhost:8000/products/', data)
+      axios.post('http://localhost:8000/products/', {...data, image:image})
     }
 
   return (
@@ -25,6 +35,11 @@ export const AddPage = () => {
         </div>
         <div className='d-flex gap-4'>
           <label className='text-white'>Qiymetini Qeyd Edin</label><input  {...register("price")} />
+        </div>
+        <div className='d-flex gap-4'>
+          <label>Image : 
+            <input type="file" onInput={(e)=>convertoBase64(e.target.files[0])} />
+          </label>
         </div>
        
         <input className='btn btn-outline-danger' type="submit" />
