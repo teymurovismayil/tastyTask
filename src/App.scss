@@ -3,6 +3,7 @@
     height: 100vh;
     background-image: url(https://wallpapers.com/images/featured/restaurant-background-2ez77umko2vj5w02.jpg);
     background-size: cover;
+    position: relative;
 
     .navbarMenu {
         background: transparent;
@@ -36,6 +37,28 @@
       
 
 
+    }
+}
+
+.book {
+    background-color: #FFB400;
+    position: absolute;
+    bottom: 0;
+    left: 110px;
+    padding: 50px;
+
+    input {
+        width: 90%;
+        background-color: transparent;
+        border: 2px solid black;
+        padding: 15px;
+    }
+
+    select {
+        width: 90%;
+        background-color: transparent;
+        border: 2px solid black;
+        padding: 15px;
     }
 }
 
@@ -155,3 +178,4 @@ table {
     align-items: center;
     justify-content: center;
 }
+

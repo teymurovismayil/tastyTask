@@ -11,7 +11,7 @@ export const Admin = () => {
 
     useEffect(() => {
         axios.get('http://localhost:8000/products')
-            .then(res => setinfo(res.data))
+            .then(res => setinfo(res.data)) 
     }, [])
 
     const deleteElement = (id) => {

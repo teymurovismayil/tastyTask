@@ -36,7 +36,7 @@ function App() {
           <Route element={<ChefAbout />}></Route>
           <Route element={<Admin />} path='/admin'></Route>
           <Route element={<Edit/>} path='edit/:id'></Route>
-          <Route element={<AddPage/>} path='AddPage' ></Route>
+          <Route element={<AddPage/>} path='AddPage'></Route>
        
         </Routes>
       </BrowserRouter>
